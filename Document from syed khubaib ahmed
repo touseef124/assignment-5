@@ -1,0 +1,76 @@
+assignment 5 question 1
+
+def factorial(n):
+    if n == 1:
+        return n;
+        
+    else:
+        f=n*factorial(n-1)
+        return f;
+    
+    
+n=int(input('Please Enter the function you want to find the factorial='))
+fact=factorial(n)
+print('Factorial=',fact)
+
+
+assignment 5 question 2
+
+
+name=input('Pleae Enter any String to check Numbers of upper and lower Cases')
+upper=0
+lower=0
+for g in name:
+    if g == g.upper():
+        upper+=1;
+    elif g == g.lower():
+        lower+=1;
+
+print('Upper case letters Are',upper,'\nLower case letters Are',lower)
+
+
+assignment 5 question 3
+
+
+tauseef=[1,2,3,4,5,6,7,8,9]
+print('The List Contains Even Numbers:')
+for a in tauseef:
+    if (a%2) == 0:
+        print(a)
+
+
+assignment 5 question 4
+
+
+def rev(x):
+    return x[::-1]
+name=input('please enter a string to check the palendrom=')
+sur=rev(name)
+if name == sur:
+    print('given string is palendrom')
+else:
+    print('given string is not palendrom')
+
+assignment 5 question 5
+
+
+a=int(input('Please Enter a Prime Number='))
+
+if (a%2) != 0:
+    if (a%3) != 0:
+        print('Given Number Is prime')
+    else:
+        print('Given Number Is Not prime')
+else:
+        print('Given Number Is Not prime')
+
+
+assignment 5 question 6
+
+def display(product,**otheritem):
+    print('\nlist of all items\n',product)
+    for a in otheritem:
+        print('\n',a)
+
+x=input("Enter Products e.g 'potato','wheat'")
+display(x)
